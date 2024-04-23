@@ -17,14 +17,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Suspense>
         <Providers> 
+        <Suspense>
               <Header />
               <Navbar />
               <SearchBox />
               {children}
-        </Providers>
         </Suspense>
+        </Providers>
         </body>
     </html>
   );
