@@ -13,6 +13,7 @@ export default async function SearchPage({ params }) {
         results.length ===
           (<h1 className="text-center pt-6">No results found</h1>)}
       {results && <Results results={results} />}
+      
     </div>
   );
 }
